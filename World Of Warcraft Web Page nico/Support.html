@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>World Of Curious</title>
+	<link rel="stylesheet" href="CSS/style_generale.css"> <!--A METTRE DANS CHAQUE PAGE-->
+	<link rel="stylesheet" href="CSS/style_support.css">
+</head>
+
+<body>
+	<div id="entete_partout">
+		<img src="logo.png" alt="World Of Warcraft" class="img_entete"/>
+		<h1>Support</h1>
+		<h2>Toute question ou amélioration est la bienvenue !</h2>
+	</div>
+	
+	<div id="barre_deroulante_partout"> <!--Menu de selection-->
+		<ul>
+			<li><a href="Accueil.html">Accueil</a></li>
+			<li><a href="1ere_guerre.html">Histoire</a><!-- Sous parties cachés et utilisés en hover-->
+				<ul>
+					<li><a href="1ere_guerre.html">1ère Guerre</a></li>
+					<li><a href="2eme_guerre.html">2ème Guerre</a></li>
+					<li><a href="3eme_guerre.html">3ème Guerre</a></li>
+				</ul>
+			</li>
+			<li><a href="Alliance.html">Faction</a><!-- Sous parties cachés et utilisés en hover-->
+				<ul>
+					<li><a href="Alliance.html">Alliance</a></li>
+					<li><a href="Horde.html">Horde</a></li>
+					<li><a href="Legion.html">Légion</a></li>
+				</ul>
+			</li>
+			<li><a href="Carte.html">Carte</a></li>
+			<li><a href="Support.html">Support</a></li>
+		</ul>
+	</div>
+	
+	<div id="contenu"> <!--Contenu de la page web-->
+		<section class="bloc_identite_message">
+		<h3>Laissez nous un commentaire !</h3>
+			<img src="img_support/Leeroy.png" alt="Leerooooooooooy Jeeeeenkins!" height="300" width="300" class="photo">
+			<form action="action.php">
+				Prénom ou Pseudo:<br>
+				<input type="text" name="prenom" value=""><br>
+				Commentaire<br>
+				<textarea rows="10" cols="30">Entrez votre commentaire ici !</textarea><br><br>
+				<input type="submit" value="Submit">
+			</form>
+		</section>
+	</div>
+	
+	<div id="pied_page">
+			<section class="group1">
+				<h3>Information</h3>
+				<a href="https://fr.wikipedia.org/wiki/Jeu_de_strat%C3%A9gie_en_temps_r%C3%A9el">Qu'est ce qu'un RTS ?</a><br>
+				<a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=129526.html">Le film Warcraft</a>
+			</section>
+			<section class="group2">
+				<h3>Officiel</h3>
+				<a href="https://www.blizzard.com/fr-fr/">Blizzard</a><br>
+				<a href="https://worldofwarcraft.com/fr-fr/">World Of Warcraft</a>
+			</section>
+			<section class="group3">
+				<h3>Fanmade (création de sites fait par un fan)</h3>
+				<a href="https://www.mamytwink.com/">Site de <u>Mamytwink</u></a>
+			</section>		
+	</div><!-- #pied -->
+	
+</body>
+
+</html>

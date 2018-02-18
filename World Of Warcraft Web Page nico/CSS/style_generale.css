@@ -1,0 +1,201 @@
+html{
+	height:100%;
+}
+p.gras{
+	border-width:5px;
+	border-style:outset;
+	border-color:black;
+	font-weight: bold;
+	font-size:1.5em;
+	text-align:center;
+	background-color:lightblue;
+	color:black;
+}
+body
+{
+	height: 100%; 
+	width: 750px;
+	margin-left: auto;
+	margin-right: auto;
+	background: url(fond.jpg);
+	color : white;
+}
+
+figcaption
+{
+	font-style: italic;
+	font-size: 14px;
+}
+
+.bloc4
+{
+	text-align: center;
+}
+
+.bloc5
+{
+	text-align: right;
+}
+
+.bloc5 p, .bloc6 p
+{
+	min-height: 300px;
+}
+
+
+.bloc5 figure
+{
+	float: right;
+}
+
+.hover:hover
+{
+	opacity : 0.55;
+	background-color: white;
+}
+
+.bloc6
+{
+	text-align: left;
+}
+
+.bloc6 figure
+{
+	float: left;
+	margin-right: 15px;
+}
+
+section
+{
+	text-align: center;
+}
+
+#entete_partout img{
+	max-width: 100%;
+}
+.img_entete {
+	float: left;
+	margin:0 20px 20px 1px;
+}
+
+
+#entete  h1 {
+	margin : 0;/*pas de marge exterieur haut bas droite et gauche */
+	font-size: 1.7em; /*taille de la police*/
+	font-family: Verdana, sans-serif;/*type de police*/
+	color: #F5F5F5; /*couleur de police*/
+}
+#entete  h2 {
+	margin : 10px 1px;/*10 aux haut et bas puis 1 à gauche et droite*/
+	font-size: 1.4em; /*taille de la police*/
+	font-family: Verdana, sans-serif;/*type de police*/
+	color: #F5F5F5; /*couleur de police*/
+}
+
+#barre_deroulante_partout{
+	
+	margin-left: auto;
+	margin-right: auto;
+	background: black;
+}
+
+#barre_deroulante_partout ul{
+	margin :0; /*pas de marge exterieur*/
+	padding: 0; /*pas de marge interieur*/
+	list-style: none; /*La propriété list style typepermet de definir l'apparence d'un element de liste, ici aucun style */
+	text-align: center; /*texte centré*/
+}
+#barre_deroulante_partout li{
+	float : left ;/*les elements de la liste vont la gauche a la droite*/
+	margin: auto; /*marge exterieur automatique*/
+	padding: 0;  /*pas de marge interieur*/
+	background: url(barre_deroulante.jpg); /* couleur d'arriere plan*/ 
+}
+#barre_deroulante_partout li a{
+	display: block; /* La propriété display bloc affiche les liens avec un saut de ligne avant et apres */
+	width: 100px; /* largeur des liens*/ 
+	color:#F5F5F5;
+	text-decoration: none; /* aucune decoration*/
+	padding: 10px 25px;  /*marge interieur*/
+}
+#barre_deroulante_partout ul li ul {
+	display: none; /* Masque la liste deroulante verticale, elle n'apparaitra qu'au pointage de la souris */
+}
+#barre_deroulante_partout ul li:hover ul {
+	display: block; /*La propriété :hover permet de specifier l'apparence d'un element */
+					/* au moment ou l'user le survole avec le pointeur sans necessairement l'activer */
+					/* Dans cet exemple l'affichage au survol est vertical */
+}
+#barre_deroulante_partout li:hover ul li{
+	float:none; /*La propriété float permet de spécifier si l'affichage des elements suivbants sont adjacents*/
+				/*on utilise généralement la propriété css float pour faire des colonnes*/
+				/*l'element ne flotte pas et remets le type à sa valeur initiale et re rentre dans le flux*/
+}
+#barre_deroulante_partout li:hover ul li{
+	float: none;
+}
+#barre_deroulante_partout li ul{
+	position: absolute; /* Plavcer un element dn'importe ou*/
+	z-index:1;/* Prciser l'empilement de certains elements d'une page*/
+}
+#barre_deroulante_partout a{
+	padding: 6px;
+	line-height: 1.5;
+	font-size: 0.85em;
+	font-family: Verdana, sans-serif;
+	text-decoration: none;
+}
+#barre_deroulante_partout li a:hover, #barre_deroulante_partout ul li ul li a:hover{
+	opacity:0.7;
+}
+
+
+#contenu{
+	overflow: auto;
+	padding: 50px;
+	background: url(contenu.jpg);
+}
+
+#contenu .group1, #contenu .group2, #contenu .group3 {
+	padding: 30px;
+}
+
+/* PIED DE PAGE */
+
+#pied_page {
+	overflow:auto;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	max-height: 100%;
+	width: 750px;
+	background: url(pied_de_page.jpg);
+}
+#pied_page .group1, #pied_page .group2, #pied_page .group3{
+	text-align: left;
+	width:200px;
+}
+#pied_page h3 {
+	font-size: 1em;
+	color: #FFFAF0;
+}
+
+#pied_page a {
+	color:#F5F5F5;
+	font-size: 0.85em;
+	text-decoration: none;
+}
+#pied_page a:hover{
+	color: #4B0082;
+}
+.group1, .group2, .group3 {
+	float:left;
+	width:150px;
+	position: relative;
+	padding: 15px;
+	margin: auto;
+	text-align: justify;
+}
+
+
+/* Fin du pied de page */

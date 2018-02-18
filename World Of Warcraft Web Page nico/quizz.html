@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Quizz</title>
+	<link rel="stylesheet" href="CSS/style_generale.css"> <!--A METTRE DANS CHAQUE PAGE-->
+
+</head>
+
+<body>
+	<div id="entete_partout">
+		<img src="logo.png" alt="World Of Warcraft" class="img_entete"/>
+		<h1>Questionnaire :</h1>
+		<h2>Repondez avec ce que vous avez appris</h2>
+	</div>
+	
+	<div id="barre_deroulante_partout"> <!--Menu de selection-->
+		<ul>
+			<li><a href="Accueil.html">Accueil</a></li>
+			<li><a href="1ere_guerre.html">Histoire</a><!-- Sous parties cachés et utilisés en hover-->
+				<ul>
+					<li><a href="1ere_guerre.html">1ère Guerre</a></li>
+					<li><a href="2eme_guerre.html">2ème Guerre</a></li>
+					<li><a href="3eme_guerre.html">3ème Guerre</a></li>
+				</ul>
+			</li>
+			<li><a href="Alliance.html">Faction</a><!-- Sous parties cachés et utilisés en hover-->
+				<ul>
+					<li><a href="Alliance.html">Alliance</a></li>
+					<li><a href="Horde.html">Horde</a></li>
+					<li><a href="Legion.html">Légion</a></li>
+				</ul>
+			</li>
+			<li><a href="Carte.html">Carte</a></li>
+			<li><a href="Support.html">Support</a></li>
+		</ul>
+	</div>
+	
+	<div id="contenu"> <!--Contenu de la page web-->
+	
+	<!-- A VOIR SI LES BLOC SONT UTILES !!!!-->
+		<p>Ce quizz permet de voir si vous avez bien lu les pages diaboliques</p>
+		<p>Toutes les réponses sont dans les différentes pages (il est important de signaler que les réponses ne seront pas données car nous ne porteront pas d'interêts sur le PHP!)</p>		
+		<form method="post" action="QUIZZ_QUI_NE_FAIT_RIEN.php">
+			<fieldset>
+				<legend>Question 1: Dans quel continent fait parti les Humains ?</legend>
+				<input type="radio" name="Q1" value="Roy_est" id="Roy_est">
+				<label for="Roy_est">Les Royaumes de l'Est</label><br>
+				<input type="radio" name="Q1" value="Kalimdor" id="Kalimdor">
+				<label for="Kalimdor">Kalimdor</label><br>
+				<input type="radio" name="Q1" value="Norfendre" id="Norfendre">
+				<label for="Norfendre">Le Norfendre</label><br>
+			</fieldset>
+			<fieldset>
+				<legend>Question 2: Qui est le roi liche au début de la troisième guerre ?</legend>
+				<select name="Q2">
+					<option value="Kil_jaeden">Kil'jaeden</option>
+					<option value="Ner_zhul">Ner'zhul</option>
+					<option value="Arthas">Arthas</option>
+					<option value="Ne_connait_pas">Roi liche, qui c'est ce gars ?</option>
+				</select>
+			</fieldset>
+			<fieldset>
+				<legend>Question 3: Dans Warcraft 2, quelle(s) race(s) fait partie de l'alliance ?</legend>
+				<input type="checkbox" name="Q3" value="Orcs" id="Orcs">
+					<label for="Orcs"> les Orcs</label>
+					<input type="checkbox" name="Q3" value="Humains" id="Humains">
+					<label for="Humains"> les Humains</label>
+					<input type="checkbox" name="Q3" value="Haut_Elfe" id="Haut_Elfe">
+					<label for="Haut_Elfe"> les Haut-Elfe</label>
+					<input type="checkbox" name="Q3" value="Dragons" id="Dragons">
+					<label for="Dragons"> les Dragons</label>
+					<input type="checkbox" name="Q3" value="Nains" id="Nains">
+					<label for="Nains"> les Nains</label>
+			</fieldset>
+			<fieldset>
+				<legend>Question 4: Sur 20, notez notre page !! (attention, la bonne réponse est 20 bien entendu)</legend>
+				<label for="chiffre">Note : </label>
+				<input type="number" name="chiffre" id="chiffre" min="0" max="20"><br><br>
+			</fieldset><br>
+		<input type="submit" value="Envoyer les réponses !">
+		<input type="reset" value="OH NON JE ME SUIS TROMPÉ, ON RESET">
+		</form>	
+	
+	</div>
+	
+	<div id="pied_page">
+			<section class="group1">
+				<h3>Information</h3>
+				<a href="https://fr.wikipedia.org/wiki/Jeu_de_strat%C3%A9gie_en_temps_r%C3%A9el">Qu'est ce qu'un RTS ?</a><br>
+				<a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=129526.html">Le film Warcraft</a>
+			</section>
+			<section class="group2">
+				<h3>Officiel</h3>
+				<a href="https://www.blizzard.com/fr-fr/">Blizzard</a><br>
+				<a href="https://worldofwarcraft.com/fr-fr/">World Of Warcraft</a>
+			</section>
+			<section class="group3">
+				<h3>Fanmade (création de sites fait par un fan)</h3>
+				<a href="https://www.mamytwink.com/">Site de <u>Mamytwink</u></a><br>
+				<a href="http://fr.wowwiki.wikia.com/wiki/Accueil">Le wikipediade World of Warcraft</a>
+			</section>		
+	</div><!-- #pied -->
+	
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+.photo{
+	float:right;
+	-webkit-box-shadow: -7px 6px 15px #333;
+	-moz-box-shadow: -7px 6px 15px #333;
+}

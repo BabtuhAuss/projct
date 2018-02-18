@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>World Of Curious</title>
+	<link rel="stylesheet" href="CSS/style_generale.css"> <!--A METTRE DANS CHAQUE PAGE-->
+
+	<link rel="stylesheet" href="CSS/style_Map.css">
+
+</head>
+
+<body>
+	<div id="entete_partout">
+		<img src="logo.png" alt="World Of Warcraft" class="img_entete"/>
+		<h1>Carte du monde</h1>
+		<h2>Cliquez sur un des continents qui vous intéresse !</h2>
+	</div>
+	
+	<div id="barre_deroulante_partout"> <!--Menu de selection-->
+		<ul>
+			<li><a href="Accueil.html">Accueil</a></li>
+			<li><a href="1ere_guerre.html">Histoire</a><!-- Sous parties cachés et utilisés en hover-->
+				<ul>
+					<li><a href="1ere_guerre.html">1ère Guerre</a></li>
+					<li><a href="2eme_guerre.html">2ème Guerre</a></li>
+					<li><a href="3eme_guerre.html">3ème Guerre</a></li>
+				</ul>
+			</li>
+			<li><a href="Alliance.html">Faction</a><!-- Sous parties cachés et utilisés en hover-->
+				<ul>
+					<li><a href="Alliance.html">Alliance</a></li>
+					<li><a href="Horde.html">Horde</a></li>
+					<li><a href="Legion.html">Légion</a></li>
+				</ul>
+			</li>
+			<li><a href="Carte.html">Carte</a></li>
+			<li><a href="Support.html">Support</a></li>
+		</ul>
+	</div>
+	
+	<img src="Carte_wow/principale.jpg" width="750" height="500" alt="Carte World of Warcraft" usemap="#CarteWow">
+	<map name="CarteWow">
+		<area shape="rect" coords="0,160,250,500" alt="Kalimdor" href="Carte_wow/Kalimdor.jpg">
+		<area shape="rect" coords="251,0,500,170" alt="Norfendre" href="Carte_wow/Norfendre.jpg">
+		<area shape="rect" coords="501,160,750,500" alt="RoyaumeDeLEst" href="Carte_wow/RoyaumeDeLEst.jpg">
+	</map>
+	
+	<div id="pied_page">
+			<section class="group1">
+				<h3>Information</h3>
+				<a href="https://fr.wikipedia.org/wiki/Jeu_de_strat%C3%A9gie_en_temps_r%C3%A9el">Qu'est ce qu'un RTS ?</a><br>
+				<a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=129526.html">Le film Warcraft</a>
+			</section>
+			<section class="group2">
+				<h3>Officiel</h3>
+				<a href="https://www.blizzard.com/fr-fr/">Blizzard</a><br>
+				<a href="https://worldofwarcraft.com/fr-fr/">World Of Warcraft</a>
+			</section>
+			<section class="group3">
+				<h3>Fanmade (création de sites fait par un fan)</h3>
+				<a href="https://www.mamytwink.com/">Site de <u>Mamytwink</u></a>
+			</section>		
+	</div><!-- #pied -->
+	
+</body>
+
+</html>
