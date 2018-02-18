@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>C:\Users\Admin\Documents\1 - Yohann Perso\GestionEvent.jar</jar>
+  <outfile>C:\Users\Admin\Documents\1 - Yohann Perso\GestionnaireEvenement.exe</outfile>
+  <errTitle>Une erreur est survenue !</errTitle>
+  <cmdLine></cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl>http://java.com/download</downloadUrl>
+  <supportUrl></supportUrl>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+  <manifest></manifest>
+  <icon>C:\Users\Admin\Pictures\picture_cuterly.ico</icon>
+  <singleInstance>
+    <mutexName>e96sg14s86gf2se8ffes18</mutexName>
+    <windowTitle>Une instance est déjà en cours d&apos;exécution</windowTitle>
+  </singleInstance>
+  <classPath>
+    <mainClass>vues.FenetrePrincipale</mainClass>
+    <cp>.</cp>
+  </classPath>
+  <jre>
+    <path></path>
+    <bundledJre64Bit>false</bundledJre64Bit>
+    <bundledJreAsFallback>false</bundledJreAsFallback>
+    <minVersion>1.8.0</minVersion>
+    <maxVersion></maxVersion>
+    <jdkPreference>preferJre</jdkPreference>
+    <runtimeBits>64/32</runtimeBits>
+  </jre>
+  <splash>
+    <file>C:\Users\Admin\Pictures\logiciel.bmp</file>
+    <waitForWindow>true</waitForWindow>
+    <timeout>10</timeout>
+    <timeoutErr>true</timeoutErr>
+  </splash>
+  <versionInfo>
+    <fileVersion>1.0.0.0</fileVersion>
+    <txtFileVersion>1.0.0.0</txtFileVersion>
+    <fileDescription>Gestionnaire d&apos;évènements</fileDescription>
+    <copyright>Yohann MARTIN &amp; Baptiste Aussenac</copyright>
+    <productVersion>1.0.0.0</productVersion>
+    <txtProductVersion>1.0.0.0</txtProductVersion>
+    <productName>Gestionnaire d&apos;évènements</productName>
+    <companyName>Yohann MARTIN &amp; Baptiste Aussenac</companyName>
+    <internalName>GestionnaireEvenement</internalName>
+    <originalFilename>GestionnaireEvenement.exe</originalFilename>
+    <trademarks></trademarks>
+    <language>FRENCH</language>
+  </versionInfo>
+  <messages>
+    <startupErr>Une erreur est survenue pendant le démarrage de l&apos;application !</startupErr>
+    <bundledJreErr>Cette application a été configurée pour utiliser un environnement d&apos;exécution Java inclus mais le runtime est manquant ou corrompu.</bundledJreErr>
+    <jreVersionErr>Cette application nécessite un environnement d&apos;exécution Java, et de version </jreVersionErr>
+    <launcherErr>La base de registre se réfère à une installation Java Runtime Environment inexistante ou le runtime est corrompu.</launcherErr>
+    <instanceAlreadyExistsMsg>Une instance d&apos;application est déjà en cours d&apos;exécution.</instanceAlreadyExistsMsg>
+  </messages>
+</launch4jConfig>
